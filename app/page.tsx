@@ -1,8 +1,9 @@
 import NavBar from "@/app/container/nav_bar";
-import { ArrowBigRight, ArrowRight } from "lucide-react";
-import Image from "next/image";
+import { ArrowRight } from "lucide-react";
+
 import Link from "next/link";
 import ServiceSection from "./container/services";
+import Approach from "./container/Approach";
 
 export default function Home() {
   return (
@@ -36,11 +37,47 @@ export default function Home() {
 
       
       </main>
-      <section className="mt-4">
-          
+      <section className="mt-4 p-3">
+
           <ServiceSection/>
        </section> 
         
+
+      <section className="container mx-auto p-3 md:p-0" >
+
+        <div className=" mt-20 mb-10 bg-gradient-to-tr from-amber-600 to-amber-200 rounded-lg p-5 flex space-x-4 items-center justify-between ">
+
+          <div>
+            <p className=" text-4xl font-bold text-white text-pretty capitalize p-3"> 
+              You have a <span className=" md:px-3 font-extrabold text-indigo-800"> project Idea</span>  and don't know where to start
+            </p>
+            <p className="text-pretty pl-3 font-normal text-xl"> No worries we have your back, you send your project idea and we will give you  <em> <b>free project proposal</b></em> tailored to your project idea.  </p>
+
+            <div className=" ml-3 mt-4 bg-black text-white text-center p-3 rounded-md font-medium w-[200px]">
+              Get Started
+            </div>
+           </div>
+          <div className="text-center">
+             {/* Image for call action */}
+          </div>
+          
+
+        </div>
+      </section>
+
+
+      <section className="  bg-neutral-950">
+
+      
+        <div className="container mx-auto text-amber-200 p-3 ">
+        <p className="text-2xl font-bold mt-10">How it work </p>
+           <p>Our approach make problems essay for our clients and bring the project ideas to reality </p>
+         
+            
+            <Approach/>
+        </div>
+       
+      </section>
     </div>
   );
 }
