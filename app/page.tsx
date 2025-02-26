@@ -4,6 +4,7 @@ import { ArrowRight } from "lucide-react";
 import Link from "next/link";
 import ServiceSection from "./container/services";
 import Approach from "./container/Approach";
+import Footer from "./container/footer";
 
 export default function Home() {
   return (
@@ -15,9 +16,9 @@ export default function Home() {
         <div className=" container mx-auto w-full md:h-[450px] grid grid-cols-12 ">
             
            
-           <div className=" col-span-12 p-3 md:col-span-7">
-           <p className="pt-10 text-orange-600 capitalize">open to fix</p>
-            <p className="md:text-6xl pt-1 font-bold">
+           <div className=" col-span-12 p-3 mb-8 md:col-span-7">
+           <p className="md:pt-10 text-orange-600 capitalize font-bold">open to fix</p>
+            <p className=" text-3xl md:text-6xl pt-1 font-bold">
             <span className="text-amber-600">Unlock </span> Your Industry
             <span className="text-amber-600 pl-2">Potential</span>
             
@@ -43,6 +44,22 @@ export default function Home() {
        </section> 
         
 
+     
+
+
+      <section className="  bg-neutral-950 md:p-20 mt-10">
+
+      
+        <div className="container mx-auto text-amber-200 p-3 ">
+        <p className="text-2xl font-bold mt-5">How it work </p>
+           <p>Our approach make problems essay for our clients and bring the project ideas to reality </p>
+         
+            
+            <Approach/>
+        </div>
+      </section>
+
+
       <section className="container mx-auto p-3 md:p-0" >
 
         <div className=" mt-20 mb-10 bg-gradient-to-tr from-amber-600 to-amber-200 rounded-lg p-5 flex space-x-4 items-center justify-between ">
@@ -56,28 +73,16 @@ export default function Home() {
             <div className=" ml-3 mt-4 bg-black text-white text-center p-3 rounded-md font-medium w-[200px]">
               Get Started
             </div>
-           </div>
+          </div>
           <div className="text-center">
-             {/* Image for call action */}
+            {/* Image for call action */}
           </div>
           
 
         </div>
-      </section>
-
-
-      <section className="  bg-neutral-950">
-
-      
-        <div className="container mx-auto text-amber-200 p-3 ">
-        <p className="text-2xl font-bold mt-10">How it work </p>
-           <p>Our approach make problems essay for our clients and bring the project ideas to reality </p>
-         
-            
-            <Approach/>
-        </div>
-       
-      </section>
+        </section>
+        <br />
+      <Footer/>
     </div>
   );
 }
