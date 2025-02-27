@@ -12,7 +12,7 @@ const Footer = () => {
 
              <div className='grid grid-cols-3'>
 
-                <div className=' col-span-1 mt-3'>
+                <div className=' col-span-3 md:col-span-1 mt-3'>
 
                     <Logo/>
                     {/* <p className='pt-4  text-amber-700 font-extrabold text-2xl'>Open to fix</p> */}
