@@ -29,7 +29,7 @@ export default function Home() {
             </p>
             
             <div className="bg-black rounded-md p-3 text-white mt-5 w-[220px] flex space-x-8">
-            <Link href="estimate" > Estimate Project</Link>
+            <Link href="projects" > Estimate Project</Link>
 
             <ArrowRight/>
             </div>

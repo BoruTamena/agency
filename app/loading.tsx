@@ -1,19 +1,34 @@
 "use client"
 
-import React from 'react'
+import React, { useState } from 'react'
 import Logo from './container/logo'
 
 
 
-const loading = () => {
+const Loading = () => {
+
+const [load, setLoading] = useState<boolean>(true);
+
+
+  setTimeout(()=>{
+    setLoading(false)
+  },5000)
+
+  
   return (
-    <div className='container mx-auto flex flex-col items-center justify-center w-full h-screen'>
+   <>
+    {
+      load && 
+      <div className='container mx-auto flex flex-col items-center justify-center w-full h-screen'>
 
         <Logo/>
        <p>loading...</p>
     </div>
+    }
+  
+   </>
   )
 }
 
 
-export default loading
+export default Loading
