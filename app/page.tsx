@@ -5,6 +5,7 @@ import Link from "next/link";
 import ServiceSection from "./container/services";
 import Approach from "./container/Approach";
 import Footer from "./container/footer";
+import Image from "next/image";
 
 export default function Home() {
   return (
@@ -13,12 +14,12 @@ export default function Home() {
       <NavBar/>
       <main className=" bg-cover bg-yellow-100 w-full  ">
 
-        <div className=" container mx-auto w-full md:h-[450px] grid grid-cols-12 ">
+        <div className=" container mx-auto w-full md:h-[450px] grid grid-cols-12   ">
             
            
            <div className=" col-span-12 p-3 mb-8 md:col-span-7">
            <p className="md:pt-10 text-orange-600 capitalize font-bold">open to fix</p>
-            <p className=" text-3xl md:text-6xl pt-1 font-bold">
+            <p className=" text-4xl md:text-6xl pt-1 font-black">
             <span className="text-amber-600">Unlock </span> Your Industry
             <span className="text-amber-600 pl-2">Potential</span>
             
@@ -33,6 +34,8 @@ export default function Home() {
             <ArrowRight/>
             </div>
            </div>
+           
+          
         </div> 
 
 
@@ -62,14 +65,17 @@ export default function Home() {
 
       <section className="container mx-auto p-3 md:p-0" >
 
-        <div className=" mt-20 mb-10 bg-gradient-to-tr from-amber-600 to-amber-200 rounded-lg p-5 flex space-x-4 items-center justify-between ">
+        <div className=" mt-20 mb-10 bg-gradient-to-tr from-amber-600 to-amber-200 rounded-lg p-5 ">
 
-          <div>
+          <div className="flex flex-col md:flex-row space-x-4 items-start justify-between ">
+            <div>
             <p className=" text-4xl font-bold text-white text-pretty capitalize p-3"> 
-              You have a <span className=" md:px-3 font-extrabold text-indigo-800"> project Idea</span>  and don't know where to start
+              You have a <span className=" md:px-3 font-extrabold text-indigo-800"> project Idea</span>  and {"don't"} know where to start
             </p>
             <p className="text-pretty pl-3 font-normal text-xl"> No worries we have your back, you send your project idea and we will give you  <em> <b>free project proposal</b></em> tailored to your project idea.  </p>
 
+            </div>
+           
             <div className=" ml-3 mt-4 bg-black text-white text-center p-3 rounded-md font-medium w-[200px]">
               Get Started
             </div>
@@ -81,6 +87,21 @@ export default function Home() {
 
         </div>
         </section>
+      
+
+        <section className="containe mx-auto mt-5 md:mt-20">
+
+         
+        <div className=" container mx-auto  flex flex-col-reverse md:flex-row  space-x-4">
+           <Image width={600} height={500} src="/World Map.svg" alt=" world map " className=" object-cover"/>
+         
+         <div>
+         <p className="text-7xl text-black font-bold uppercase"> it {"don't"} matter where you are </p>
+          <p className=" text-2xl">We are happy to work with all clients around the world </p>
+         </div>
+         </div>
+        </section>
+        <br />
         <br />
       <Footer/>
     </div>

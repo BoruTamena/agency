@@ -7,6 +7,7 @@ import { PackageOpen } from 'lucide-react'
 import React, { FC } from 'react'
 import NavItems from '../constant'
 import Link from 'next/link'
+import Logo from '../logo'
 
 interface ListItemProps {
     title: string
@@ -20,9 +21,7 @@ const NavBar: FC = () => {
             <div className='container mx-auto flex items-center  '>
                 
                 {/* Logo */}
-                <Link href="/" className='font-bold text-xl mr-10 '>
-                    OpenToFix
-                </Link>
+                <Logo/>
 
                 {/* Navigation Menu */}
                 <NavigationMenu className='hidden md:block'>
@@ -36,7 +35,7 @@ const NavBar: FC = () => {
                         ].map((link, index) => (
                             <NavigationMenuItem key={index}>
                                 <Link href={link.path} legacyBehavior passHref>
-                                    <NavigationMenuLink className='font-medium hover:text-yellow-700 transition-colors'>
+                                    <NavigationMenuLink className='font-medium  p-2  hover:text-yellow-700transition-colors hover:border-b-2 focus:border-b-3'>
                                         {link.title}
                                     </NavigationMenuLink>
                                 </Link>
@@ -70,7 +69,7 @@ const NavBar: FC = () => {
                 </NavigationMenu>
                 <div className='mx-auto flex-1'/>
 
-                <div className='bg-amber-200 text-stone-950 px-5 py-3 rounded-md capitalize'>
+                <div className='bg-amber-300 text-stone-950 px-5 py-2 rounded-md capitalize outline-offset-5'>
                     estimate project
                 </div>
             </div>
