@@ -3,11 +3,12 @@ import {
     NavigationMenuLink, NavigationMenuList, NavigationMenuTrigger 
 } from '@/components/ui/navigation-menu'
 import { cn } from '@/lib/utils'
-import { PackageOpen } from 'lucide-react'
+import { MenuIcon, PackageOpen } from 'lucide-react'
 import React, { FC } from 'react'
 import NavItems from '../constant'
 import Link from 'next/link'
 import Logo from '../logo'
+import { Drawer, DrawerContent, DrawerHeader, DrawerTitle, DrawerTrigger } from '@/components/ui/drawer'
 
 interface ListItemProps {
     title: string
@@ -69,8 +70,37 @@ const NavBar: FC = () => {
                 </NavigationMenu>
                 <div className='mx-auto flex-1'/>
 
-                <div className='bg-amber-300 text-stone-950 px-5 py-2 rounded-md capitalize outline-offset-5'>
+                <div className= ' hidden md:block bg-amber-300 text-stone-950 px-5 py-2 rounded-md capitalize outline-offset-5'>
                     estimate project
+                </div>
+
+                <div className='block md:hidden'>
+
+                    <Drawer>
+                        <DrawerTrigger asChild>
+                             <MenuIcon/>
+                        </DrawerTrigger>
+                        <DrawerContent>
+                            <DrawerHeader>
+                                <DrawerTitle>OpenToFix </DrawerTitle>
+                                <Drawer>we are here to help</Drawer>
+                            </DrawerHeader>
+                            <div>
+                                {
+                              [
+                             { title: "Home", path: "/" },
+                             { title: "About", path: "/about" },
+                             { title: "Projects", path: "/projects" }
+                                    ].map((item,index)=><Link className='block capitalize m-3 p-2 border-b-2 border-amber-50 hover:bg-amber-300 rounded-md' key={index}href={item.path}>
+                                        {item.title}
+                                        </Link>)
+                                    
+                                }
+                            </div>
+                        </DrawerContent>
+                    </Drawer>
+                   
+
                 </div>
             </div>
         </nav>

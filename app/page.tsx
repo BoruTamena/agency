@@ -20,7 +20,7 @@ export default function Home() {
            
            <div className=" col-span-12 p-3 mb-8 md:col-span-7">
            <p className="md:pt-10 text-orange-600 capitalize font-bold">open to fix</p>
-            <p className=" text-4xl md:text-6xl pt-1 font-black uppercase">
+            <p className=" text-3xl md:text-6xl pt-1 font-black uppercase">
             <span className="text-amber-600">Unlock </span> Your Industry
             <span className="text-amber-600 pl-2">Potential</span>
             

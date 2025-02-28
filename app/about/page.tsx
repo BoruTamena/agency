@@ -38,7 +38,7 @@ const page = () => {
     {/* About */}
     <section className='container mx-auto p-3 md:p-0  md:w-[70%]'>
       <div className="flex flex-col justify-items-center">
-        <p className=' text-amber-700 font-bold capitalize text-3xl md:text-5xl mt-4'>about us </p>
+        <p className=' text-amber-700 font-bold uppercase text-2xl md:text-5xl mt-4'>about us </p>
         <p className='text-4xl md:text-5xl font-extrabold uppercase text-pretty mt-5'>Empowering Businesses with Innovative Software Solutions</p>
         {/* <p className='p-2 text-xl text-pretty capitalize '> Thanks for your interest in our company! We specialize in fullstack development, API integration, web solutions, and IT consulting to drive your success.</p> */}
 
