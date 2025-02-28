@@ -13,7 +13,7 @@ export default function Home() {
     <div >
      
       <NavBar/>
-      <main className=" bg-cover bg-yellow-100 w-full  ">
+      <main className=" bg-cover bg-yellow-100 w-full ">
 
         <div className=" container mx-auto w-full md:h-[450px] grid grid-cols-12   ">
             
@@ -25,15 +25,23 @@ export default function Home() {
             <span className="text-amber-600 pl-2">Potential</span>
             
             </p>
-            <p className="pt-1 text-xl font-medium  text-justify md:w-[600]">
+            <p className="pt-1 text-xl font-medium  text-justify tracking-tight md:w-[600]">
                  Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corporis fugit atque ratione amet minus enim nihil consequatur soluta ex tempora suscipit, non quos? Cumque, quae quibusdam? Dicta corporis dolores nemo?
             </p>
             
-            <div className="bg-black rounded-md p-3 text-white mt-5 w-[220px] flex space-x-8">
-            <Link href="projects" > Estimate Project</Link>
+            
+            <Link href="projects" >
+            <div className="bg-black rounded-md p-3  text-white mt-5 w-full  md:w-[220px] flex items-center justify-between space-x-8">
+              
+              Estimate Project
+              <ArrowRight/>
 
-            <ArrowRight/>
             </div>
+             
+             </Link>
+
+            
+            
            </div>
            
           

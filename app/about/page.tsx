@@ -36,13 +36,13 @@ const page = () => {
 
 
     {/* About */}
-    <section className='container mx-auto p-3 md:p-0  md:w-[70%]'>
+    <section className='container mx-auto p-3 md:p-0  md:w-[70%]  pb-10 md:pb-0'>
       <div className="flex flex-col justify-items-center">
         <p className=' text-amber-700 font-bold uppercase text-2xl md:text-5xl mt-4'>about us </p>
-        <p className='text-4xl md:text-5xl font-extrabold uppercase text-pretty mt-5'>Empowering Businesses with Innovative Software Solutions</p>
+        <p className='text-3xl md:text-5xl font-extrabold uppercase text-pretty tracking-normal mt-5 mb-5 md:mb-0'>Empowering Businesses with Innovative Software Solutions</p>
         {/* <p className='p-2 text-xl text-pretty capitalize '> Thanks for your interest in our company! We specialize in fullstack development, API integration, web solutions, and IT consulting to drive your success.</p> */}
 
-         <div className='flex flex-col md:flex-row justify-between space-y-3 md:space-y-0  md:space-x-3 relative -bottom-20'>
+         <div className='flex flex-col md:flex-row justify-between space-y-3 md:space-y-0  md:space-x-3 relative   md:-bottom-20'>
           <div  className=' bg-gradient-to-tl from-amber-50 to-amber-950 p-3 rounded-md shadow-md '>
             <p className='text-7xl font-black text-center text-white '>20 <span className='text-amber-800 '>{"+"}</span> </p> 
             <p className='text-amber-400 text-3xl font-extrabold uppercase text-wrap text-center'>OnGoing Projects</p>
@@ -62,14 +62,14 @@ const page = () => {
     </div>
 
 
-    <section className='container mx-auto  mt-32 p-3 md:p-0'>
+    <section className='container mx-auto mt-10  md:mt-32 p-3 md:p-0'>
 
       <p className='capitalize text-3xl font-bold pt-4'>who are we </p>
 
-      <div className='grid grid-cols-12 gap-2  '>
+      <div className='grid grid-cols-12 gap-2 md:gap-10  '>
 
         <div className=' col-span-12 md:col-span-6 '>
-          <p className="text-xl font-medium text-balance capitalize mt-3">
+          <p className="text-xl font-medium text-justify tracking-tighter hyphens-auto capitalize mt-3">
             At <strong>opentofix</strong>, we are passionate about crafting cutting-edge digital solutions tailored to your needs. 
             Our team of experienced developers and consultants works closely with businesses to transform ideas into reality.
          </p>
