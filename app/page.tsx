@@ -1,3 +1,4 @@
+
 import NavBar from "@/app/container/nav_bar";
 import { ArrowRight } from "lucide-react";
 
@@ -19,12 +20,12 @@ export default function Home() {
            
            <div className=" col-span-12 p-3 mb-8 md:col-span-7">
            <p className="md:pt-10 text-orange-600 capitalize font-bold">open to fix</p>
-            <p className=" text-4xl md:text-6xl pt-1 font-black">
+            <p className=" text-4xl md:text-6xl pt-1 font-black uppercase">
             <span className="text-amber-600">Unlock </span> Your Industry
             <span className="text-amber-600 pl-2">Potential</span>
             
             </p>
-            <p className="pt-1 text-justify md:w-[550]">
+            <p className="pt-1 text-xl font-medium  text-justify md:w-[600]">
                  Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corporis fugit atque ratione amet minus enim nihil consequatur soluta ex tempora suscipit, non quos? Cumque, quae quibusdam? Dicta corporis dolores nemo?
             </p>
             

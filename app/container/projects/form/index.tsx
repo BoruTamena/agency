@@ -59,7 +59,7 @@ const ProjectForm = () => {
                 </div>
                 )
                    }
-                    <button type="submit" className='bg-black text-amber-600 p-2 text-center w-full rounded-md font-bold'>Submit</button>
+                    <button type="submit" className='bg-black text-amber-600 p-2 text-center w-full rounded-md font-bold mb-10'>Submit</button>
                 
                 </form>
             </Form>

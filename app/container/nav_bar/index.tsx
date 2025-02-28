@@ -35,7 +35,7 @@ const NavBar: FC = () => {
                         ].map((link, index) => (
                             <NavigationMenuItem key={index}>
                                 <Link href={link.path} legacyBehavior passHref>
-                                    <NavigationMenuLink className='font-medium  p-2  hover:text-yellow-700transition-colors hover:border-b-2 focus:border-b-3'>
+                                    <NavigationMenuLink className='font-medium  p-2 pb-5 hover:text-yellow-900 hover:border-b-2 border-amber-950 focus:border-b-3'>
                                         {link.title}
                                     </NavigationMenuLink>
                                 </Link>
