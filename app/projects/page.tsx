@@ -15,7 +15,6 @@ const page = () => {
     <NavBar/>
     <ProjectForm/>
         
-    
     </Suspense>
     
   

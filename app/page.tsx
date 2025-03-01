@@ -8,6 +8,10 @@ import Approach from "./container/Approach";
 import Footer from "./container/footer";
 import Image from "next/image";
 
+
+
+
+
 export default function Home() {
   return (
     <div >
@@ -19,7 +23,7 @@ export default function Home() {
             
            
            <div className=" col-span-12 p-3 mb-8 md:col-span-7">
-           <p className="md:pt-10 text-orange-600 capitalize font-bold">open to fix</p>
+           <p className="md:pt-10 text-orange-600 capitalize font-bold text-xl">open to fix</p>
             <p className=" text-3xl md:text-6xl pt-1 font-black uppercase">
             <span className="text-amber-600">Unlock </span> Your Industry
             <span className="text-amber-600 pl-2">Potential</span>
@@ -31,7 +35,7 @@ export default function Home() {
             
             
             <Link href="projects" >
-            <div className="bg-black rounded-md p-3  text-white mt-5 w-full  md:w-[220px] flex items-center justify-between space-x-8">
+            <div className="bg-black rounded-md p-3  text-white mt-5 w-full  md:w-[220px] flex items-center justify-around space-x-8">
               
               Estimate Project
               <ArrowRight/>

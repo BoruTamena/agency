@@ -30,8 +30,7 @@ const ProjectForm = () => {
             <Form {...form}>
                 <form onSubmit={form.handleSubmit(onSubmit)} className="  flex flex-col items-center">
                    {
-                    FormFields.map((item,index)=> <div key={index} className='w-full'>
-                        
+                    FormFields.map((item,index)=> <div key={index} className='w-full'>       
                    {
                     item.type=="text" && 
                     <FormField  
